@@ -13,7 +13,6 @@ const Header = () => {
   const navItems = [
     { href: '/', label: t('nav.home') },
     { href: '/services', label: t('nav.services') },
-    { href: '/it-solution', label: t('nav.itSolution') },
     { href: '/contact', label: t('nav.contact') },
   ];
 
