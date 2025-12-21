@@ -27,6 +27,7 @@ const translations = {
     'about.title': 'Chi sono',
     'about.text1': 'Sono Andrea Agostini, un professionista IT con una passione per la tecnologia che mi accompagna da sempre. Con una laurea e diverse certificazioni nel settore informatico, ho fatto della qualità e dell\'affidabilità i pilastri del mio lavoro.',
     'about.text2': 'A² Projects nasce dalla volontà di offrire soluzioni IT serie e moderne a privati e piccole imprese italiane, contribuendo a colmare il divario digitale che ancora caratterizza il nostro paese.',
+    'about.linkedin': 'Connettiti su LinkedIn',
     
     // Services
     'services.title': 'Servizi',
@@ -119,7 +120,7 @@ const translations = {
     'contact.info.email': 'Email',
     'contact.info.phone': 'Telefono',
     'contact.info.area': 'Area di servizio',
-    'contact.info.areaValue': 'Lavoro da remoto – Italia (base in Lombardia)',
+    'contact.info.areaValue': 'Lavoro da remoto – Italia',
     'contact.info.linkedin': 'LinkedIn',
     
     // Footer
@@ -145,6 +146,7 @@ const translations = {
     'about.title': 'About Me',
     'about.text1': 'I am Andrea Agostini, an IT professional with a lifelong passion for technology. With a degree and multiple certifications in the IT field, I have made quality and reliability the pillars of my work.',
     'about.text2': 'A² Projects was born from the desire to offer serious and modern IT solutions to individuals and small businesses in Italy, helping to bridge the digital gap that still characterizes our country.',
+    'about.linkedin': 'Connect on LinkedIn',
     
     // Services
     'services.title': 'Services',
@@ -237,7 +239,7 @@ const translations = {
     'contact.info.email': 'Email',
     'contact.info.phone': 'Phone',
     'contact.info.area': 'Service area',
-    'contact.info.areaValue': 'Remote work – Italy (based in Lombardy)',
+    'contact.info.areaValue': 'Remote work – Italy',
     'contact.info.linkedin': 'LinkedIn',
     
     // Footer

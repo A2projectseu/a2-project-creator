@@ -1,4 +1,4 @@
-import { Award, GraduationCap, Heart } from 'lucide-react';
+import { Award, GraduationCap, Heart, Linkedin } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const AboutSection = () => {
@@ -49,6 +49,21 @@ const AboutSection = () => {
                   </div>
                 </div>
               </div>
+
+              <a 
+                href="https://www.linkedin.com/in/andrea-agostini-48939a204/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-4 rounded-xl bg-[#0077B5]/10 border border-[#0077B5]/20 hover:bg-[#0077B5]/20 transition-colors group"
+              >
+                <div className="w-10 h-10 rounded-lg bg-[#0077B5]/20 flex items-center justify-center flex-shrink-0">
+                  <Linkedin className="w-5 h-5 text-[#0077B5]" />
+                </div>
+                <div>
+                  <p className="font-medium group-hover:text-[#0077B5] transition-colors">{t('about.linkedin')}</p>
+                  <p className="text-sm text-muted-foreground">Andrea Agostini</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
