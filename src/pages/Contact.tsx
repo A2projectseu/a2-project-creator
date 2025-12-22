@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
   const { t, language } = useLanguage();
@@ -25,16 +26,27 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // For now, simulate form submission
-    // In production, this would send to an edge function that emails info@a2projects.eu
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+      });
+
+      if (error) {
+        throw error;
+      }
+
       setIsSubmitted(true);
       toast({
         title: language === 'it' ? 'Messaggio inviato!' : 'Message sent!',
         description: t('contact.form.success'),
       });
     } catch (error) {
+      console.error('Error sending contact form:', error);
       toast({
         title: language === 'it' ? 'Errore' : 'Error',
         description: t('contact.form.error'),
