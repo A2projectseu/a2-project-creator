@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Globe, ArrowRight, Plus } from 'lucide-react';
+import { Globe, ArrowRight, Plus, Youtube } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 
@@ -36,6 +36,29 @@ const ServicesCarousel = () => {
                   {t('services.itSolution.cta')}
                   <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                 </Link>
+              </Button>
+            </div>
+          </div>
+
+          {/* YouTube Channel Card */}
+          <div className="group relative p-8 rounded-3xl card-gradient border border-border shadow-card hover:shadow-glow transition-all duration-500 hover:-translate-y-1">
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#FF0000]/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            
+            <div className="relative z-10">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#FF0000] to-[#CC0000] flex items-center justify-center mb-6 shadow-lg">
+                <Youtube className="w-7 h-7 text-white" />
+              </div>
+
+              <h3 className="text-xl font-bold mb-3">{t('services.youtube.title')}</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                {t('services.youtube.desc')}
+              </p>
+
+              <Button asChild variant="outline" className="group/btn">
+                <a href="https://www.youtube.com/@A2ProjectsCore" target="_blank" rel="noopener noreferrer">
+                  {t('services.youtube.cta')}
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                </a>
               </Button>
             </div>
           </div>
