@@ -35,6 +35,9 @@ const translations = {
     'services.itSolution.title': 'IT Solution',
     'services.itSolution.desc': 'Servizio IT completo: creazione siti web personalizzati, supporto tecnico e consulenza strategica per privati e piccole realtà.',
     'services.itSolution.cta': 'Scopri di più',
+    'services.youtube.title': 'A² Projects Core',
+    'services.youtube.desc': 'Il mio viaggio verso la libertà finanziaria in Italia a vent\'anni. Crescita personale e strategie concrete per chi vuole costruire il proprio futuro, un passo alla volta.',
+    'services.youtube.cta': 'Guarda il canale',
     'services.comingSoon': 'Altri servizi in arrivo',
     
     // Why Choose Us
@@ -154,6 +157,9 @@ const translations = {
     'services.itSolution.title': 'IT Solution',
     'services.itSolution.desc': 'Complete IT service: custom website creation, technical support and strategic consulting for individuals and small businesses.',
     'services.itSolution.cta': 'Learn more',
+    'services.youtube.title': 'A² Projects Core',
+    'services.youtube.desc': 'My journey to financial freedom in Italy in my twenties. Personal growth and concrete strategies for those who want to build their future, step by step.',
+    'services.youtube.cta': 'Watch the channel',
     'services.comingSoon': 'More services coming soon',
     
     // Why Choose Us

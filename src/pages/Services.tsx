@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Globe, ArrowRight, Plus, Layers } from 'lucide-react';
+import { Globe, ArrowRight, Plus, Layers, Youtube } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
@@ -16,8 +16,8 @@ const Services = () => {
         <meta 
           name="description" 
           content={language === 'it' 
-            ? 'Scopri i servizi IT di A² Projects: creazione siti web, supporto tecnico e consulenza per privati e piccole imprese.'
-            : 'Discover A² Projects IT services: website creation, technical support and consulting for individuals and small businesses.'
+            ? 'Scopri i servizi IT di A² Projects: creazione siti web, supporto tecnico, consulenza e contenuti YouTube per la crescita personale.'
+            : 'Discover A² Projects IT services: website creation, technical support, consulting and YouTube content for personal growth.'
           } 
         />
       </Helmet>
@@ -45,7 +45,7 @@ const Services = () => {
         {/* Services Grid */}
         <section className="py-24">
           <div className="container mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {/* IT Solution Card */}
               <div className="group relative p-10 rounded-3xl card-gradient border border-border shadow-card hover:shadow-glow transition-all duration-500">
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -65,6 +65,29 @@ const Services = () => {
                       {t('services.itSolution.cta')}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
+                  </Button>
+                </div>
+              </div>
+
+              {/* YouTube Channel Card */}
+              <div className="group relative p-10 rounded-3xl card-gradient border border-border shadow-card hover:shadow-glow transition-all duration-500">
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#FF0000]/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="relative z-10">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#FF0000] to-[#CC0000] flex items-center justify-center mb-6 shadow-lg">
+                    <Youtube className="w-8 h-8 text-white" />
+                  </div>
+
+                  <h2 className="text-2xl font-bold mb-4">{t('services.youtube.title')}</h2>
+                  <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
+                    {t('services.youtube.desc')}
+                  </p>
+
+                  <Button asChild variant="hero">
+                    <a href="https://www.youtube.com/@A2ProjectsCore" target="_blank" rel="noopener noreferrer">
+                      {t('services.youtube.cta')}
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </a>
                   </Button>
                 </div>
               </div>
