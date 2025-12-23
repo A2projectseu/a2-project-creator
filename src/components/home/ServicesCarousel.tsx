@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Globe, ArrowRight, Plus, Youtube } from 'lucide-react';
+import { Monitor, ArrowRight, Plus, Youtube } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 
@@ -22,8 +22,8 @@ const ServicesCarousel = () => {
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             
             <div className="relative z-10">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 shadow-glow">
-                <Globe className="w-7 h-7 text-primary-foreground" />
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#4285F4] via-[#EA4335] to-[#FBBC04] flex items-center justify-center mb-6 shadow-lg">
+                <Monitor className="w-7 h-7 text-white" />
               </div>
 
               <h3 className="text-xl font-bold mb-3">{t('services.itSolution.title')}</h3>
