@@ -1,8 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { 
-  Globe, 
-  Zap, 
+  Zap,
   Smartphone, 
   Link2, 
   Layout as LayoutIcon, 
@@ -78,10 +77,6 @@ const ITSolution = () => {
 
           <div className="container mx-auto relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-                <Globe className="w-4 h-4" />
-                IT Solution
-              </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('itSolution.hero.title')}</h1>
               <p className="text-lg text-muted-foreground mb-8">{t('itSolution.hero.subtitle')}</p>
               <p className="text-muted-foreground">{t('itSolution.summary')}</p>
@@ -95,9 +90,6 @@ const ITSolution = () => {
             <div className="max-w-5xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                    Main Focus
-                  </div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('itSolution.websites.title')}</h2>
                   <p className="text-lg text-muted-foreground mb-8">{t('itSolution.websites.desc')}</p>
                   
@@ -116,7 +108,7 @@ const ITSolution = () => {
                 <div className="relative">
                   <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 p-8 flex items-center justify-center">
                     <div className="w-full h-full rounded-2xl bg-card border border-border shadow-card flex items-center justify-center">
-                      <Globe className="w-24 h-24 text-primary/30" />
+                      <Monitor className="w-24 h-24 text-primary/30" />
                     </div>
                   </div>
                   <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl blur-2xl" />

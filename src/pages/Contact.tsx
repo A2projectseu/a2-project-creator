@@ -87,10 +87,6 @@ const Contact = () => {
 
           <div className="container mx-auto relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-6">
-                <Mail className="w-4 h-4" />
-                {t('nav.contact')}
-              </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">{t('contact.title')}</h1>
               <p className="text-lg text-muted-foreground">{t('contact.subtitle')}</p>
             </div>
