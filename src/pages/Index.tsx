@@ -14,7 +14,7 @@ const Index = () => {
     <>
       <Helmet>
         <html lang={language} />
-        <title>A² Projects - {language === 'it' ? 'Siti web su misura per privati e piccole realtà' : 'Custom websites for individuals and small businesses'}</title>
+        <title>A² Projects</title>
         <meta 
           name="description" 
           content={language === 'it' 
