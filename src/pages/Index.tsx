@@ -5,7 +5,6 @@ import HeroSection from '@/components/home/HeroSection';
 import AboutSection from '@/components/home/AboutSection';
 import ServicesCarousel from '@/components/home/ServicesCarousel';
 import WhyChooseUs from '@/components/home/WhyChooseUs';
-import TestimonialsSection from '@/components/home/TestimonialsSection';
 import CTASection from '@/components/home/CTASection';
 
 const Index = () => {
@@ -29,7 +28,6 @@ const Index = () => {
         <AboutSection />
         <ServicesCarousel />
         <WhyChooseUs />
-        <TestimonialsSection />
         <CTASection />
       </Layout>
     </>
